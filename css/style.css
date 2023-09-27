@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+@import url("sections/header.css");
+@import url('sections/feature.css');
+@import url('sections/review.css');
+@import url('sections/footer.css');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Dark-blue: hsl(217, 28%, 15%);
+    --mainbackground: hsl(218, 28%, 13%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+    --white: hsl(0, 0%, 100%);
+   --cta-1: hsl(176, 68%, 64%);
+    --cta-2: hsl(198, 60%, 50%);
+    --error: hsl(0, 100%, 63%);
+}
+body{
+
+    background-color: var(--Dark-blue);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
+}
+img{
+    object-fit: contain;
+}
+.nav-container,
+.hero-section-container,.features-container,.productive-container,.reviews,footer .container
+{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+}
+.features,.section-3,.review-container,.cta{
+    background-color: var(--mainbackground);
+    
+}
+header,
+#hero-section h1{
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    padding:1rem 2rem;
+}
+ul{
+    list-style: none;
+}
+a,button{
+    font-family: inherit;
+    color: inherit;
+   
+}
+a{
+    text-decoration: none;
+}
+.feature p,.container p,.review p ,.cta p{
+    opacity:0.8;
+
+}

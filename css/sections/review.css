@@ -1,0 +1,109 @@
+.review-container{
+    padding: 8rem 2rem 4rem;
+}
+.reviews{
+    display: grid;
+    place-content: center;
+    gap:2rem;
+}
+.review{
+    background-color: var(--testimonials-background);
+    padding:2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.user-details{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.user-name h4{
+    font-size: 0.85rem;
+}
+
+.user-name p{
+    font-size: 0.75rem;
+}
+.user-details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.reviews:first-child{
+    position: relative;
+    z-index: 20;
+}
+.reviews:first-child::after{
+    content: url('/images/bg-quotes.png');
+    position: absolute;
+    top:-40px;
+    left:0;
+    z-index: -1;
+}
+
+.cta .container{
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+    padding:2.5rem;
+    background-color: var(--Dark-blue);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(40%);
+}
+.cta-description p{
+    margin:1.3rem 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    margin-top: 2rem;
+} 
+.form-control input{
+    display: block;
+    padding:0.7rem 1.5rem ;
+  width:100%;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 0.1px;
+  border-color: var(--cta1);
+  outline: none;
+}
+.form-control,
+.form .btn{
+    flex:1;
+}
+.form .btn{
+    padding-inline: 1rem;
+    border: none;
+    font-size: 0.85rem;
+    
+}
+@media screen and (min-width:800px){
+    
+    .reviews{
+        grid-template-columns: repeat(3,1fr);
+    }
+   .form{
+    flex-direction: row;
+    align-items: center;
+   }
+   .form-control{
+    flex:0.6;
+   }
+   .form-control input{
+    width:400px;
+   }
+   .form .btn{
+    flex:0.3;
+   }
+   .cta .container{
+    transform: translateY(50%);
+   }
+}
