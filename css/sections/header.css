@@ -12,6 +12,7 @@ header{
 }
 header ul li a{
     transition: 0.5s;
+    font-size: clamp(0.8rem,0.95rem+1vw,1rem);
 }
 
 header ul li a:hover{
