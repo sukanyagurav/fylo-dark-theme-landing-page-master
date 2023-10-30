@@ -1,8 +1,8 @@
 footer{
     background-color: var(--footer-background);
-    padding:10rem 2rem 2rem;
+    padding:13rem 2rem 2rem;
     display: flex;
-  
+    color:var(--white);
 }
 .footer-content{
     margin:3rem 0;
@@ -23,9 +23,7 @@ footer{
     flex-direction: column;
     gap:0.5rem;
 }
-.footer-nav-links-1 li a{
-    text-decoration: none;
-}
+
 .footer-nav-links-1 li a:hover,
 .footer-nav-links-2 li a:hover,
 .social-links li a:hover{
@@ -41,9 +39,6 @@ footer{
     gap:1rem;
 }
 @media screen and (min-width:800px){
-    footer{
-        padding-top: 8rem;
-    }
     .footer-content{
         grid-template-columns: 350px repeat(4,1fr);  
     }

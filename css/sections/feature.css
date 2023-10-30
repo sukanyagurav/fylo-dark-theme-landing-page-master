@@ -6,21 +6,23 @@
     text-align: center;
     padding:8rem 1rem;
     position: relative;
-
+  
 }
-
+body.light .features-container::after{
+    background-image: url('/images/bg-curvy-light-mode.svg');
+}
 .features-container::after{
     content:'';
     background-image: url('/images/bg-curvy-mobile.svg');
     position: absolute;
-    background-size: 800px;
+    background-size: 165% 45%;
     background-position: center;
     z-index: -1;
     background-repeat: no-repeat;
     width: 100%;
-    height: 130%;
-    top:-900px;
-   
+    height: 100%;
+    top: -661px;
+  
 }
 .feature{
     max-width: 400px;
@@ -46,7 +48,6 @@
 .productive-container .productive-image{
     max-width: 400px;
     width: 100%;
-
 }
 .productive-container .container{
     max-width: 500px;
@@ -63,28 +64,40 @@
     border-bottom: 1px solid var(--cta-1);
     transition: 0.5s;
 }
+body.light .productive-container .container div a{
+    color:var(--Dark-blue);
+    border-bottom: 1px solid var(--Dark-blue);
+}
+body.light .productive-container .container div a:hover{
+    color:var(--cta-2);
+    border-bottom: 0.1rem solid var(--cta-2);
+}
 .productive-container .container div a:hover{
     color:var(--white);
     border-bottom-color: var(--white);
 }
-.productive-container .container div a:hover img{
-    filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(0%) hue-rotate(16deg) brightness(105%) contrast(102%);
+
+body.light .productive-container .container div a svg #circle{
+  
+    fill:#e5e7eb;
+}
+body.light .productive-container .container div a:hover svg #circle{
+    fill:var(--cta-2);
 }
 .productive-container .container div a:hover svg #circle{
     fill:#fff;
 }
 .productive-container .container div a svg{
     margin-bottom: -2px;
-    transition: 0.5s;
 }
 @media screen and (min-width:800px){
     .features-container::after{
-        background-size: contain;
-        width: 130%;
+        background-size: 150%;
+        width: 100%;
         height: 100%;
         top: -70%;
-        left:-20%;
-        background-image: url('/images/bg-curvy-desktop.svg');
+        left:0;
+        background-image: url('/images/bg-curvy-desktop.svg');  
     }
     .features-container{
         grid-template-columns: repeat(2,1fr);

@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     gap:1rem;
-    
 }
 header{
     background-color: var(--Dark-blue);
@@ -18,7 +17,11 @@ header ul li a:hover{
     color:var(--cta-1);
     border-bottom: 0.1rem solid var(--cta-1);
 }
-header ul{
+body.light header ul li a:hover{
+    color:var(--cta-2);
+    border-bottom: 0.1rem solid var(--cta-2);
+}
+header nav ul{
     display: flex;
     gap:1rem;
 }
@@ -28,7 +31,7 @@ header .logo{
 }
 .hero-section-container{
     display: flex;
-    gap:1.4rem;
+    gap:1.8rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -45,16 +48,37 @@ header .logo{
     font-weight: 700;
     letter-spacing: 1.1px;
 }
-.hero-section-container p{
-    font-size: 0.98rem;
-    letter-spacing: 1.02px;
-}
+
 .btn{
     background-image:linear-gradient(to right,var(--cta-1),var(--cta-2));
     color:var(--white);
-    padding: 0.8rem 5rem;
+    padding: 0.75rem 5rem;
     border-radius: 30px;
-    cursor: pointer;
     font-weight: 700;
     font-size: 1rem;
+    max-width:300px;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn:hover{
+    box-shadow: var(--cta-1) -2px 0px 8px;
+}
+
+#theme-toggle{
+    width:20px;
+    height:20px;
+    background: transparent;
+    border: none;
+}
+body.light #theme-toggle-light-icon{
+    display: none;
+}
+body.light #theme-toggle-dark-icon{
+    display: block;
+}
+body #theme-toggle-dark-icon{
+    display: none;
+}
+body #theme-toggle-light-icon {
+    display: block;
 }
