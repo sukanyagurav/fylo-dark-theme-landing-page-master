@@ -30,6 +30,7 @@ body{
     margin-inline: auto;
     scroll-behavior: smooth;
     transition: color 0.5s;
+    overflow-x: hidden;
 }
 body.light{
     color: var(--Dark-blue);

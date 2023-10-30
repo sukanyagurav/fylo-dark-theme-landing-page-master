@@ -31,6 +31,10 @@ body.light .features-container::after{
 .feature img{
     width:70px;
     height: 70px;
+    transition:transform 1.7s;
+}
+.feature img:hover{
+ transform: rotateY(360deg);
 }
 .feature h2{
     margin: 1rem 0;

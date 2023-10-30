@@ -41,3 +41,25 @@ function toggleMode(){
    
     document.body.classList.toggle('light')
 }
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'50px',
+    duration:1300,
+    delay:100
+})
+sr.reveal('.hero-section-container img')
+sr.reveal('.hero-section-container h1')
+sr.reveal('.hero-section-container p')
+sr.reveal('.hero-section-container a')
+
+sr.reveal('.features-container .feature:nth-child(1)',{origin:'bottom',opacity:1})
+sr.reveal('.features-container .feature:nth-child(2)',{origin:'bottom',opacity:1})
+sr.reveal('.features-container .feature:nth-child(3)',{origin:'bottom',opacity:1})
+sr.reveal('.features-container .feature:nth-child(4)',{origin:'bottom',opacity:1})
+
+sr.reveal('.productive-container img',{origin:'bottom',opacity:1})
+sr.reveal('.productive-container .container',{origin:'bottom',opacity:1})
+
+sr.reveal('.reviews .review:nth-child(1)',{origin:'bottom',opacity:1})
+sr.reveal('.reviews .review:nth-child(2)',{origin:'bottom',opacity:1,delay:200})
+sr.reveal('.reviews .review:nth-child(3)',{origin:'bottom',opacity:1,delay:200})
