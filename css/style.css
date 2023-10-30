@@ -90,6 +90,14 @@ h4{
 p{
     font-size: 0.9rem;
 }
+.sr-only{
+    position:absolute;
+    left:-1000px;
+    width:1px;
+    height:1px;
+    top:auto;
+    overflow:hidden;
+}
 @media screen and (min-width:800px){
     header{
         padding:1.7rem 3rem;
