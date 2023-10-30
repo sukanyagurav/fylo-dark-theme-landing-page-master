@@ -94,4 +94,8 @@ p{
     header{
         padding:1.7rem 3rem;
     }
+    header nav ul{
+        display: flex;
+        gap:1rem;
+    }
 }
